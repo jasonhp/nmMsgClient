@@ -1,0 +1,62 @@
+.msg-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.msg-users-wrapper {
+  width: 300px;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    font-size: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.msg-list-wrapper {
+  width: 700px;
+
+  .msg-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .msg-bubble {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  &.me {
+    .msg-avatar {
+      float: right;
+    }
+
+    .msg-bubble {
+      float: right;
+      background-color: #68ccfb;
+    }
+  }
+
+  &.you {
+    .msg-avatar {
+      float: left;
+    }
+
+    .msg-bubble {
+      float: left;
+      background-color: #bfbfbf;
+    }
+  }
+}
